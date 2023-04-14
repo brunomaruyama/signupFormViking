@@ -1,0 +1,131 @@
+body, html {
+  height:100%;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+.content{
+  display: flex;
+
+}
+
+.boxleft {
+  width: 40vw;
+  height: 100vh;
+  background-color: #222222;
+  border: 1px red;
+  background-image: url(fabian-jones.jpg);
+  background-size:40vw;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.logocontainer {
+  display:flex;
+  color: white;
+  height: auto;
+  background: rgba(0,0,0,0.6);
+  margin-top:16vh;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row-wrap;
+}
+
+.logo {
+  width:12vw;
+  height:12vh;
+}
+
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  background: #222222;
+  width: 60vw;
+  height: 100vh;
+  color: #ddd;
+  justify-content: center;
+  align-content: space-around;
+  padding-left: 1.5rem;
+}
+
+.inputContainer {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+}
+
+form{
+  display:flex;
+  flex-flow:column wrap;
+  gap:20px;
+  padding:20px 0;
+}
+.textform {
+  font-size: 1.5rem;
+}
+
+.textform p{
+  margin-bottom:1em;
+}
+
+input {
+  background-color:#333;
+  border: 1px solid #777;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline:none;
+  border:1px solid #8b8;
+}
+.input{
+  display:flex;
+  flex-flow:column wrap;
+  width: 40%;
+  padding:12px 0;
+}
+
+label {
+  color:#777;
+}
+
+.cadastro{
+  display:flex;
+  flex-wrap:wrap;
+  align-content:flex-start;
+  justify-content:space-between;
+  align-items:left;
+}
+
+button {
+  background-color:#8b8;
+  color:#fff;
+  padding: 16px;
+  border-radius:3px;
+  border:none;
+  font-size:1.2em;
+  font-weight:700;
+}
+
+button:hover {
+  color:#8b8;
+  background-color:#fff;
+  transition:0.7s;
+}
+
+.login a{
+  color:#8b8;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1.2em;
+}
+
+.login a:hover{
+  color:#fff;
+  transition:0.7s;
+}
