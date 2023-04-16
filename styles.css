@@ -5,6 +5,7 @@ body, html {
 * {
   margin:0;
   padding:0;
+  box-sizing:border-box;
 }
 
 .content{
@@ -37,8 +38,8 @@ body, html {
 }
 
 .logo {
-  width:12vw;
-  height:12vh;
+  width:200px;
+  height:120px;
 }
 
 .formcontainer {
@@ -50,14 +51,9 @@ body, html {
   color: #ddd;
   justify-content: center;
   align-content: space-around;
-  padding-left: 1.5rem;
+  padding: 0 1.5rem;
 }
 
-.inputContainer {
-  display:flex;
-  flex-flow:row wrap;
-  justify-content:space-between;
-}
 
 form{
   display:flex;
@@ -83,12 +79,25 @@ input:focus {
   outline:none;
   border:1px solid #8b8;
 }
+
+.inputContainer {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  gap:12px;
+}
+
+
+
 .input{
   display:flex;
   flex-flow:column wrap;
   width: 40%;
   padding:12px 0;
+  flex:1 0 40%;
+  justify-content:space-between;
 }
+
 
 label {
   color:#777;
@@ -128,4 +137,14 @@ button:hover {
 .login a:hover{
   color:#fff;
   transition:0.7s;
+}
+
+@media only screen and (max-width: 600px){
+  .inputContainer {
+    display:block;
+  }
+
+  .input{
+    width:auto;
+  }
 }
